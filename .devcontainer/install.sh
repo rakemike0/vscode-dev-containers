@@ -19,3 +19,6 @@ echo "export DONT_PROMPT_WSL_INSTALL=true" | tee -a /etc/bash.bashrc >> /etc/pro
 
 # Install firefox
 apt-get install -y firefox-esr
+dpkg --add-architecture i386
+sudo apt update
+apt-get install wine
